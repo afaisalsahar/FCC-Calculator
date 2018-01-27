@@ -1,0 +1,106 @@
+* {box-sizing: border-box;}
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #4db2fe radial-gradient(
+            circle farthest-side,
+            #6ae5e3, #4db2fe
+        );
+    color: rgba(245,245,245,1);
+    font: normal 100%/1.5 'Montserrat Alternates', cursive, sans-serif;
+}
+a {text-decoration: none;}
+.container {
+    padding: 1em;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.calculator {
+    max-width: 300px;
+    margin: 0 auto;
+}
+.title {
+    margin-top: 0;
+    font-size: 1.8em;
+    text-shadow: 0.1em 0.1em rgba(0,0,0,.2);
+    text-align: center;
+}
+.screen {
+    font-weight: 300;
+    background-color: rgba(157,28,178,1);
+    border-top-right-radius: .5em;
+    border-top-left-radius: .5em;
+    text-align: right;
+    padding: 2em 2em 1em 2em;
+}
+.screen span {
+    display: block;
+}
+.screen #result {
+    font-size: 2em;
+    margin-right: -.1em;
+}
+.screen #equation {color: rgba(255,255,255,0.7);}
+.btns {
+    padding: 2em;
+    text-align: center;
+    background-color: rgba(245,245,245,1);
+    border-bottom-right-radius: .5em;
+    border-bottom-left-radius: .5em;
+    font-weight: 700;
+}
+.row {
+    width: 100%;
+}
+.row a {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+    border: 1.5px solid transparent;
+    border-radius: 50%;
+    transition: all .3s;
+}
+.integer {color: rgba(157,28,178,1);}
+.operation {color: rgba(119,196,54,1);}
+.integer:hover {border-color: rgba(157,28,178,1);}
+.integer:active {
+    background-color: rgba(157,28,178,1);
+    color: rgba(245,245,245,1);
+}
+.operation:hover {border-color: rgba(119,196,54,1);}
+.operation:active {
+    background-color: rgba(119,196,54,1);
+    color: rgba(245,245,245,1);
+}
+a.result {
+    width: 100%;
+    border-radius: 100px;
+}
+.footer {
+    margin-top: 2em;
+    text-align: center;
+    font-weight: 700;
+    font-size: .9em;
+    text-transform: uppercase;
+}
+.footer .icon {
+    display: inline-block;
+    margin-top: 3px;
+}
+.footer a {
+    color: rgb(118, 28, 178);
+}
+.footer span {
+    vertical-align: middle;
+    fill: rgb(118, 28, 178);
+}
